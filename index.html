@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Canadian Medical Group | Physiotherapy & Chiropractic</title>
+
+  <meta
+    name="description"
+    content="Explore physiotherapy and chiropractic care at Canadian Medical Group in Westwood Mall, Mississauga. Contact us to request an appointment."
+  >
+
+  <meta name="theme-color" content="#8f1838">
+
+  <link rel="icon" href="Images/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">
+    Skip to content
+  </a>
+
+  <!-- Shared SVG icons -->
+  <svg
+    class="icon-definitions"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+    width="0"
+    height="0"
+    style="position:absolute; overflow:hidden"
+  >
+    <defs>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </symbol>
+
+      <symbol id="icon-chevron" viewBox="0 0 24 24">
+        <path d="m6 9 6 6 6-6"/>
+      </symbol>
+
+      <symbol id="icon-cross" viewBox="0 0 24 24">
+        <path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/>
+      </symbol>
+
+      <symbol id="icon-movement" viewBox="0 0 24 24">
+        <circle cx="15" cy="4" r="2"/>
+        <path d="m12 8 4 3 4-1M12 8l-3 5-5 1M12 8l-4-1-3 3"/>
+        <path d="m9 13 5 3 2 5M9 13l-2 7"/>
+      </symbol>
+
+      <symbol id="icon-spine" viewBox="0 0 24 24">
+        <path d="M13 2c-4 4 3 7-1 11s-3 6-2 9"/>
+        <path d="m9 5 7 1M9 9l7 1M8 14l7 1M6 18l7 1"/>
+      </symbol>
+
+      <symbol id="icon-location" viewBox="0 0 24 24">
+        <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/>
+        <circle cx="12" cy="10" r="2.5"/>
+      </symbol>
+
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" rx="2"/>
+        <path d="m3 7 9 6 9-6"/>
+      </symbol>
+
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4L19 6"/>
+      </symbol>
+
+      <symbol id="icon-play" viewBox="0 0 24 24">
+        <path d="m9 5 11 7-11 7Z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- Decorative cursor: enabled only by JavaScript -->
+  <div class="cursor-orbit" aria-hidden="true" hidden>
+    <span class="cursor-orbit__ring"></span>
+    <span class="cursor-orbit__dot"></span>
+    <span class="cursor-orbit__label">Explore</span>
+  </div>
+
+  <!-- Opening animation: hidden until JavaScript starts it -->
+  <div id="opening-screen" class="opening-screen" aria-hidden="true" hidden>
+    <div class="opening-screen__ambient"></div>
+
+    <div class="opening-screen__content">
+      <div class="opening-screen__orbit">
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="opening-screen__logo-wrap">
+        <img
+          src="Images/logo.png"
+          alt=""
+          class="opening-screen__logo"
+          width="320"
+          height="180"
+        >
+      </div>
+
+      <p class="opening-screen__name">Canadian Medical Group</p>
+      <p class="opening-screen__caption">
+        Movement. Balance. Care.
+      </p>
+
+      <div class="opening-screen__line">
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-shell">
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Canadian Medical Group home">
+          <img
+            class="brand__logo"
+            src="Images/logo.png"
+            alt="Canadian Medical Group"
+            width="220"
+            height="100"
+          >
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          aria-label="Open navigation"
+          hidden
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav
+          id="primary-navigation"
+          class="primary-navigation"
+          aria-label="Main navigation"
+        >
+          <a class="nav-link is-active" href="index.html" aria-current="page">
+            Home
+          </a>
+
+          <a class="nav-link" href="services.html">
+            Our services
+          </a>
+
+          <a class="nav-link" href="about-contact.html">
+            About & contact
+          </a>
+
+          <a
+            class="button button--small button--primary nav-appointment"
+            href="about-contact.html#appointment"
+          >
+            <span>Request an appointment</span>
+            <svg class="icon" aria-hidden="true">
+              <use href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+
+      <!-- Cinematic hero -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__background" aria-hidden="true">
+          <div class="hero__glow hero__glow--one"></div>
+          <div class="hero__glow hero__glow--two"></div>
+          <div class="hero__grid"></div>
+          <div class="hero__grain"></div>
+        </div>
+
+        <div class="container hero__layout">
+          <div class="hero__content">
+            <p class="eyebrow hero-enter" style="--enter-delay: 0.1s">
+              <span class="status-dot" aria-hidden="true"></span>
+              Physiotherapy & chiropractic
+            </p>
+
+            <h1 id="hero-title" class="hero__title hero-enter" style="--enter-delay: 0.2s">
+              Move better.<br>
+              <span class="text-gradient">Feel stronger.</span><br>
+              Live fully.
+            </h1>
+
+            <p class="hero__description hero-enter" style="--enter-delay: 0.3s">
+              Take the next step towards more comfortable movement.
+              Explore physiotherapy and chiropractic care at
+              Canadian Medical Group in Mississauga.
+            </p>
+
+            <div class="hero__actions hero-enter" style="--enter-delay: 0.4s">
+              <a
+                class="button button--primary"
+                href="about-contact.html#appointment"
+                data-magnetic
+              >
+                <span>Request an appointment</span>
+                <span class="button__icon">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-arrow"></use>
+                  </svg>
+                </span>
+              </a>
+
+              <a class="text-link" href="services.html">
+                <span>Explore our care</span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-arrow"></use>
+                </svg>
+              </a>
+            </div>
+
+            <div class="hero__location hero-enter" style="--enter-delay: 0.5s">
+              <span class="hero__location-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-location"></use>
+                </svg>
+              </span>
+
+              <div>
+                <strong>Westwood Mall</strong>
+                <span>Mississauga, Ontario</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CSS 3D scene with generated artwork -->
+          <div class="hero__visual hero-enter" style="--enter-delay: 0.3s">
+            <div class="health-scene" data-scene>
+              <div class="health-scene__aura" aria-hidden="true"></div>
+
+              <div class="health-scene__orbit health-scene__orbit--one" aria-hidden="true"></div>
+              <div class="health-scene__orbit health-scene__orbit--two" aria-hidden="true"></div>
+              <div class="health-scene__orbit health-scene__orbit--three" aria-hidden="true"></div>
+
+              <div class="health-scene__artwork">
+                <img
+                  src="Images/hero-medical.png"
+                  alt="Abstract glass sculpture representing the human body"
+                  class="health-scene__image"
+                  width="1672"
+                  height="941"
+                  fetchpriority="high"
+                  decoding="async"
+                >
+                <div class="health-scene__image-shade" aria-hidden="true"></div>
+              </div>
+
+              <div
+                class="floating-symbol floating-symbol--cross"
+                aria-hidden="true"
+              >
+                <svg class="icon">
+                  <use href="#icon-cross"></use>
+                </svg>
+              </div>
+
+              <div
+                class="floating-symbol floating-symbol--movement"
+                aria-hidden="true"
+              >
+                <svg class="icon">
+                  <use href="#icon-movement"></use>
+                </svg>
+              </div>
+
+              <div
+                class="floating-symbol floating-symbol--spine"
+                aria-hidden="true"
+              >
+                <svg class="icon">
+                  <use href="#icon-spine"></use>
+                </svg>
+              </div>
+
+              <div class="floating-label floating-label--physio" aria-hidden="true">
+                <span class="floating-label__icon">
+                  <svg class="icon">
+                    <use href="#icon-movement"></use>
+                  </svg>
+                </span>
+
+                <div>
+                  <strong>Physiotherapy</strong>
+                  <span>Support your movement</span>
+                </div>
+              </div>
+
+              <div class="floating-label floating-label--chiro" aria-hidden="true">
+                <span class="floating-label__icon">
+                  <svg class="icon">
+                    <use href="#icon-spine"></use>
+                  </svg>
+                </span>
+
+                <div>
+                  <strong>Chiropractic</strong>
+                  <span>Care for everyday mobility</span>
+                </div>
+              </div>
+
+              <span class="scene-particle scene-particle--one" aria-hidden="true"></span>
+              <span class="scene-particle scene-particle--two" aria-hidden="true"></span>
+              <span class="scene-particle scene-particle--three" aria-hidden="true"></span>
+
+              <div class="health-scene__base" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container hero__bottom">
+          <a class="scroll-cue" href="#our-services">
+            <span class="scroll-cue__mouse" aria-hidden="true">
+              <span></span>
+            </span>
+            <span>Discover your next step</span>
+          </a>
+
+          <button
+            class="motion-toggle"
+            type="button"
+            aria-pressed="false"
+            hidden
+          >
+            <span class="motion-toggle__indicator" aria-hidden="true"></span>
+            <span class="motion-toggle__text">Pause motion</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Intro strip -->
+      <div class="care-strip">
+        <div class="container care-strip__inner">
+          <span>
+            <svg class="icon" aria-hidden="true">
+              <use href="#icon-movement"></use>
+            </svg>
+            Physiotherapy
+          </span>
+
+          <span class="care-strip__divider" aria-hidden="true"></span>
+
+          <span>
+            <svg class="icon" aria-hidden="true">
+              <use href="#icon-spine"></use>
+            </svg>
+            Chiropractic care
+          </span>
+
+          <span class="care-strip__divider" aria-hidden="true"></span>
+
+          <span>
+            <svg class="icon" aria-hidden="true">
+              <use href="#icon-location"></use>
+            </svg>
+            Westwood Mall, Mississauga
+          </span>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <section
+        id="our-services"
+        class="section services-section"
+        aria-labelledby="services-title"
+      >
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <div>
+              <p class="eyebrow">Our services</p>
+              <h2 id="services-title">
+                Care that keeps<br>
+                <span class="text-burgundy">you moving.</span>
+              </h2>
+            </div>
+
+            <p class="section-heading__description">
+              Discover two approaches to supporting movement,
+              function and everyday comfort.
+            </p>
+          </div>
+
+          <div class="services-grid">
+
+            <article class="service-card" data-reveal data-tilt>
+              <a
+                class="service-card__image-link"
+                href="services.html#physiotherapy"
+                aria-label="Explore physiotherapy"
+              >
+                <img
+                  src="Images/physiotherapy-care.png"
+                  alt="Illustration of a physiotherapist guiding a resistance band exercise"
+                  width="1448"
+                  height="1086"
+                  loading="lazy"
+                  decoding="async"
+                >
+
+                <span class="service-card__number" aria-hidden="true">01</span>
+
+                <span class="service-card__image-arrow" aria-hidden="true">
+                  <svg class="icon">
+                    <use href="#icon-arrow"></use>
+                  </svg>
+                </span>
+              </a>
+
+              <div class="service-card__body">
+                <div class="service-card__heading">
+                  <span class="service-icon" aria-hidden="true">
+                    <svg class="icon">
+                      <use href="#icon-movement"></use>
+                    </svg>
+                  </span>
+
+                  <h3>
+                    <a href="services.html#physiotherapy">
+                      Physiotherapy
+                    </a>
+                  </h3>
+                </div>
+
+                <p>
+                  Explore care focused on movement, strength and function,
+                  with assessment and guidance suited to your needs.
+                </p>
+
+                <a class="text-link" href="services.html#physiotherapy">
+                  <span>Discover physiotherapy</span>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="service-card" data-reveal data-tilt>
+              <a
+                class="service-card__image-link"
+                href="services.html#chiropractic"
+                aria-label="Explore chiropractic care"
+              >
+                <img
+                  src="Images/chiropractic-care.png"
+                  alt="Illustration of a chiropractor assessing a patient's shoulder and posture"
+                  width="1448"
+                  height="1086"
+                  loading="lazy"
+                  decoding="async"
+                >
+
+                <span class="service-card__number" aria-hidden="true">02</span>
+
+                <span class="service-card__image-arrow" aria-hidden="true">
+                  <svg class="icon">
+                    <use href="#icon-arrow"></use>
+                  </svg>
+                </span>
+              </a>
+
+              <div class="service-card__body">
+                <div class="service-card__heading">
+                  <span class="service-icon" aria-hidden="true">
+                    <svg class="icon">
+                      <use href="#icon-spine"></use>
+                    </svg>
+                  </span>
+
+                  <h3>
+                    <a href="services.html#chiropractic">
+                      Chiropractic care
+                    </a>
+                  </h3>
+                </div>
+
+                <p>
+                  Explore assessment and care for concerns involving
+                  the spine, joints and muscles, and discuss your options.
+                </p>
+
+                <a class="text-link" href="services.html#chiropractic">
+                  <span>Discover chiropractic</span>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- About preview -->
+      <section class="section approach-section" aria-labelledby="approach-title">
+        <div class="container approach-layout">
+
+          <div class="approach-visual" data-reveal>
+            <div class="approach-visual__outline" aria-hidden="true"></div>
+
+            <div class="approach-visual__image">
+              <img
+                src="Images/rehabilitation.png"
+                alt="Illustration of a therapist supporting a shoulder rehabilitation exercise"
+                width="1448"
+                height="1086"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+
+            <div class="approach-visual__badge">
+              <svg class="icon" aria-hidden="true">
+                <use href="#icon-movement"></use>
+              </svg>
+              <span>Everyday movement.<br><strong>Meaningful goals.</strong></span>
+            </div>
+          </div>
+
+          <div class="approach-content" data-reveal>
+            <p class="eyebrow">Canadian Medical Group</p>
+
+            <h2 id="approach-title">
+              Your movement.<br>
+              <span class="text-burgundy">Your next chapter.</span>
+            </h2>
+
+            <p class="lead">
+              Getting started with care should feel clear and approachable.
+            </p>
+
+            <p>
+              Whether you are exploring physiotherapy or chiropractic care,
+              contact our clinic to discuss appointment availability and
+              find out more about your first visit.
+            </p>
+
+            <ul class="care-points">
+              <li>
+                <span class="care-points__icon" aria-hidden="true">
+                  <svg class="icon">
+                    <use href="#icon-check"></use>
+                  </svg>
+                </span>
+                Physiotherapy and chiropractic services
+              </li>
+
+              <li>
+                <span class="care-points__icon" aria-hidden="true">
+                  <svg class="icon">
+                    <use href="#icon-check"></use>
+                  </svg>
+                </span>
+                Convenient location at Westwood Mall
+              </li>
+
+              <li>
+                <span class="care-points__icon" aria-hidden="true">
+                  <svg class="icon">
+                    <use href="#icon-check"></use>
+                  </svg>
+                </span>
+                Appointment enquiries by email or online request
+              </li>
+            </ul>
+
+            <a class="button button--dark" href="about-contact.html">
+              <span>Get to know our clinic</span>
+              <span class="button__icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-arrow"></use>
+                </svg>
+              </span>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Appointment journey -->
+      <section class="section journey-section" aria-labelledby="journey-title">
+        <div class="journey-section__glow" aria-hidden="true"></div>
+
+        <div class="container">
+          <div class="section-heading section-heading--center" data-reveal>
+            <p class="eyebrow">Getting started</p>
+
+            <h2 id="journey-title">
+              A clear path<br>
+              <span class="text-gradient">to your first visit.</span>
+            </h2>
+
+            <p>
+              Three simple steps to begin your conversation with us.
+            </p>
+          </div>
+
+          <div class="journey-grid">
+            <article class="journey-card" data-reveal>
+              <span class="journey-card__number">01</span>
+
+              <h3>Explore your options</h3>
+
+              <p>
+                Read about physiotherapy and chiropractic care
+                to learn more about each service.
+              </p>
+
+              <svg class="journey-card__arrow icon" aria-hidden="true">
+                <use href="#icon-arrow"></use>
+              </svg>
+            </article>
+
+            <article class="journey-card" data-reveal>
+              <span class="journey-card__number">02</span>
+
+              <h3>Send your enquiry</h3>
+
+              <p>
+                Tell us which service interests you and how
+                you would like us to contact you.
+              </p>
+
+              <svg class="journey-card__arrow icon" aria-hidden="true">
+                <use href="#icon-arrow"></use>
+              </svg>
+            </article>
+
+            <article class="journey-card" data-reveal>
+              <span class="journey-card__number">03</span>
+
+              <h3>Confirm your visit</h3>
+
+              <p>
+                Wait for confirmation of availability and
+                appointment details before coming to the clinic.
+              </p>
+
+              <svg class="journey-card__arrow icon" aria-hidden="true">
+                <use href="#icon-check"></use>
+              </svg>
+            </article>
+          </div>
+
+          <div class="section-action" data-reveal>
+            <a class="button button--primary" href="about-contact.html#appointment">
+              <span>Take your first step</span>
+              <span class="button__icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-arrow"></use>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQs -->
+      <section class="section faq-section" aria-labelledby="faq-title">
+        <div class="container faq-layout">
+          <div class="faq-intro" data-reveal>
+            <p class="eyebrow">Before your visit</p>
+
+            <h2 id="faq-title">
+              A little clarity.<br>
+              <span class="text-burgundy">A confident start.</span>
+            </h2>
+
+            <p>
+              Have another question? Email our clinic before
+              requesting your appointment.
+            </p>
+
+            <a
+              class="text-link"
+              href="mailto:canadianmedicalgroupinc@gmail.com"
+            >
+              <span>Email our clinic</span>
+              <svg class="icon" aria-hidden="true">
+                <use href="#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="faq-list" data-reveal>
+            <details class="faq-item">
+              <summary>
+                <span>Which services can I enquire about?</span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-chevron"></use>
+                </svg>
+              </summary>
+
+              <div class="faq-item__answer">
+                <p>
+                  You can contact Canadian Medical Group about
+                  physiotherapy and chiropractic services.
+                  Ask us about availability and your first visit.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>Where is the clinic located?</span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-chevron"></use>
+                </svg>
+              </summary>
+
+              <div class="faq-item__answer">
+                <p>
+                  Find us at Westwood Mall, Unit 1A07-7215 Goreway Dr,
+                  Mississauga, ON L4T 0B4.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>Does an online request confirm an appointment?</span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-chevron"></use>
+                </svg>
+              </summary>
+
+              <div class="faq-item__answer">
+                <p>
+                  An online request is an enquiry. Your appointment
+                  is confirmed only after the clinic contacts you
+                  and agrees on the details.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>What should I ask before my first appointment?</span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-chevron"></use>
+                </svg>
+              </summary>
+
+              <div class="faq-item__answer">
+                <p>
+                  Ask about appointment length, fees, what to bring
+                  and any paperwork required. If you plan to use
+                  insurance, confirm your coverage and billing
+                  arrangements in advance.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact banner -->
+      <section class="contact-cta" aria-labelledby="contact-cta-title">
+        <img
+          class="contact-cta__background"
+          src="Images/contact-banner.png"
+          alt=""
+          width="1672"
+          height="941"
+          loading="lazy"
+          decoding="async"
+        >
+
+        <div class="contact-cta__overlay" aria-hidden="true"></div>
+
+        <div class="container contact-cta__content" data-reveal>
+          <p class="eyebrow">Your next step starts here</p>
+
+          <h2 id="contact-cta-title">
+            Make room for<br>
+            better movement.
+          </h2>
+
+          <p>
+            Contact Canadian Medical Group to explore
+            physiotherapy and chiropractic appointments.
+          </p>
+
+          <a
+            class="button button--light"
+            href="about-contact.html#appointment"
+            data-magnetic
+          >
+            <span>Let’s get started</span>
+            <span class="button__icon">
+              <svg class="icon" aria-hidden="true">
+                <use href="#icon-arrow"></use>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Canadian Medical Group home">
+            <span class="footer-brand__logo-wrap">
+              <img
+                src="Images/logo.png"
+                alt="Canadian Medical Group"
+                width="220"
+                height="100"
+                loading="lazy"
+              >
+            </span>
+          </a>
+
+          <p>
+            Physiotherapy and chiropractic care
+            at Westwood Mall, Mississauga.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h2>Explore</h2>
+
+          <a href="index.html">Home</a>
+          <a href="services.html">Our services</a>
+          <a href="about-contact.html">About & contact</a>
+          <a href="about-contact.html#appointment">
+            Request an appointment
+          </a>
+        </div>
+
+        <div class="footer-column">
+          <h2>Our care</h2>
+
+          <a href="services.html#physiotherapy">Physiotherapy</a>
+          <a href="services.html#chiropractic">Chiropractic</a>
+        </div>
+
+        <div class="footer-column footer-contact">
+          <h2>Visit & connect</h2>
+
+          <address>
+            Westwood Mall<br>
+            Unit 1A07-7215 Goreway Dr<br>
+            Mississauga, ON L4T 0B4
+          </address>
+
+          <a href="mailto:canadianmedicalgroupinc@gmail.com">
+            canadianmedicalgroupinc@gmail.com
+          </a>
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Westwood+Mall+Unit+1A07+7215+Goreway+Dr+Mississauga+ON+L4T+0B4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get directions
+            <svg class="icon" aria-hidden="true">
+              <use href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="container footer-bottom">
+        <p>
+          © <span data-current-year>2026</span>
+          Canadian Medical Group. All rights reserved.
+        </p>
+
+        <p class="footer-image-note">
+          Illustrative imagery. Images do not depict our actual staff or premises.
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+  <a
+    class="back-to-top"
+    href="#main-content"
+    aria-label="Back to top"
+    hidden
+  >
+    <svg class="icon" aria-hidden="true">
+      <use href="#icon-arrow"></use>
+    </svg>
+  </a>
+</body>
+</html>

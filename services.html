@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Physiotherapy & Chiropractic | Canadian Medical Group</title>
+
+  <meta
+    name="description"
+    content="Explore physiotherapy and chiropractic services at Canadian Medical Group, Westwood Mall, Mississauga. Contact our clinic about appointment availability."
+  >
+
+  <meta name="theme-color" content="#8f1838">
+
+  <link rel="icon" href="Images/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body class="cmg-services-page">
+  <a class="skip-link" href="#main-content">
+    Skip to content
+  </a>
+
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+    width="0"
+    height="0"
+    style="position:absolute;overflow:hidden"
+  >
+    <defs>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </symbol>
+
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4L19 6"/>
+      </symbol>
+
+      <symbol id="icon-chevron" viewBox="0 0 24 24">
+        <path d="m6 9 6 6 6-6"/>
+      </symbol>
+
+      <symbol id="icon-cross" viewBox="0 0 24 24">
+        <path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/>
+      </symbol>
+
+      <symbol id="icon-movement" viewBox="0 0 24 24">
+        <circle cx="15" cy="4" r="2"/>
+        <path d="m12 8 4 3 4-1M12 8l-3 5-5 1M12 8l-4-1-3 3"/>
+        <path d="m9 13 5 3 2 5M9 13l-2 7"/>
+      </symbol>
+
+      <symbol id="icon-spine" viewBox="0 0 24 24">
+        <path d="M13 2c-4 4 3 7-1 11s-3 6-2 9"/>
+        <path d="m9 5 7 1M9 9l7 1M8 14l7 1M6 18l7 1"/>
+      </symbol>
+
+      <symbol id="icon-location" viewBox="0 0 24 24">
+        <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/>
+        <circle cx="12" cy="10" r="2.5"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="cursor-orbit" aria-hidden="true" hidden>
+    <span class="cursor-orbit__ring"></span>
+    <span class="cursor-orbit__dot"></span>
+    <span class="cursor-orbit__label">Explore</span>
+  </div>
+
+  <div class="site-shell">
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Canadian Medical Group home"
+        >
+          <img
+            class="brand__logo"
+            src="Images/logo.png"
+            alt="Canadian Medical Group"
+            width="220"
+            height="100"
+          >
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          aria-label="Open navigation"
+          hidden
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav
+          id="primary-navigation"
+          class="primary-navigation"
+          aria-label="Main navigation"
+        >
+          <a class="nav-link" href="index.html">Home</a>
+
+          <a
+            class="nav-link is-active"
+            href="services.html"
+            aria-current="page"
+          >
+            Our services
+          </a>
+
+          <a class="nav-link" href="about-contact.html">
+            About & contact
+          </a>
+
+          <a
+            class="button button--small button--primary nav-appointment"
+            href="about-contact.html#appointment"
+          >
+            <span>Request an appointment</span>
+            <svg class="icon" aria-hidden="true">
+              <use href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+
+      <!-- CINEMATIC SERVICE HEADER -->
+      <section class="sv-hero" aria-labelledby="services-heading">
+        <div class="sv-hero__glow" aria-hidden="true"></div>
+        <div class="sv-hero__grid" aria-hidden="true"></div>
+
+        <div class="container sv-hero__layout">
+          <div class="sv-hero__content">
+            <nav class="sv-breadcrumb" aria-label="Breadcrumb">
+              <a href="index.html">Home</a>
+              <span aria-hidden="true">/</span>
+              <span aria-current="page">Our services</span>
+            </nav>
+
+            <p class="eyebrow">
+              Care for the way you move
+            </p>
+
+            <h1 id="services-heading">
+              Movement.<br>
+              <span>With possibility.</span>
+            </h1>
+
+            <p class="sv-hero__description">
+              Explore physiotherapy and chiropractic care.
+              Start a conversation about your movement,
+              your comfort and your next step.
+            </p>
+
+            <div class="sv-hero__actions">
+              <a class="button button--primary" href="#physiotherapy">
+                <span>Explore our services</span>
+                <span class="button__icon">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-arrow"></use>
+                  </svg>
+                </span>
+              </a>
+
+              <button
+                class="motion-toggle"
+                type="button"
+                aria-pressed="false"
+                hidden
+              >
+                <span
+                  class="motion-toggle__indicator"
+                  aria-hidden="true"
+                ></span>
+                <span class="motion-toggle__text">Pause motion</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="sv-sculpture" aria-hidden="true">
+            <div class="sv-sculpture__halo"></div>
+
+            <div class="sv-sculpture__ring sv-sculpture__ring--one"></div>
+            <div class="sv-sculpture__ring sv-sculpture__ring--two"></div>
+
+            <div class="sv-sculpture__core">
+              <svg class="icon">
+                <use href="#icon-cross"></use>
+              </svg>
+            </div>
+
+            <div class="sv-orbit-chip sv-orbit-chip--one">
+              <svg class="icon">
+                <use href="#icon-movement"></use>
+              </svg>
+              <span>Physiotherapy</span>
+            </div>
+
+            <div class="sv-orbit-chip sv-orbit-chip--two">
+              <svg class="icon">
+                <use href="#icon-spine"></use>
+              </svg>
+              <span>Chiropractic</span>
+            </div>
+
+            <span class="sv-sculpture__dot sv-sculpture__dot--one"></span>
+            <span class="sv-sculpture__dot sv-sculpture__dot--two"></span>
+
+            <div class="sv-sculpture__shadow"></div>
+          </div>
+        </div>
+
+        <div class="container sv-hero__bottom">
+          <span>Canadian Medical Group</span>
+
+          <span>
+            <svg class="icon" aria-hidden="true">
+              <use href="#icon-location"></use>
+            </svg>
+            Westwood Mall, Mississauga
+          </span>
+        </div>
+      </section>
+
+      <!-- SERVICE NAVIGATION -->
+      <nav class="sv-jumpbar" aria-label="Services on this page">
+        <div class="container sv-jumpbar__inner">
+          <a href="#physiotherapy">
+            <span class="sv-jumpbar__number">01</span>
+            Physiotherapy
+            <svg class="icon" aria-hidden="true">
+              <use href="#icon-arrow"></use>
+            </svg>
+          </a>
+
+          <a href="#chiropractic">
+            <span class="sv-jumpbar__number">02</span>
+            Chiropractic
+            <svg class="icon" aria-hidden="true">
+              <use href="#icon-arrow"></use>
+            </svg>
+          </a>
+
+          <a href="#first-visit">
+            <span class="sv-jumpbar__number">03</span>
+            Your first visit
+            <svg class="icon" aria-hidden="true">
+              <use href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+
+      <!-- PHYSIOTHERAPY -->
+      <section
+        id="physiotherapy"
+        class="sv-service section"
+        aria-labelledby="physio-heading"
+      >
+        <div class="container sv-service__layout">
+
+          <div class="sv-photo-composition" data-reveal>
+            <span class="sv-photo-composition__outline" aria-hidden="true"></span>
+
+            <figure class="sv-photo">
+              <img
+                src="Images/physiotherapy-care.png"
+                alt="Illustration of a physiotherapist guiding a resistance band exercise"
+                width="1448"
+                height="1086"
+                loading="lazy"
+                decoding="async"
+              >
+
+              <figcaption class="sv-photo__caption">
+                <span class="sv-photo__caption-icon">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-movement"></use>
+                  </svg>
+                </span>
+
+                <span>
+                  <small>Explore your potential</small>
+                  <strong>One movement at a time.</strong>
+                </span>
+              </figcaption>
+            </figure>
+
+            <span class="sv-photo-composition__index" aria-hidden="true">
+              01
+            </span>
+          </div>
+
+          <div class="sv-service__content" data-reveal>
+            <p class="eyebrow">Physiotherapy</p>
+
+            <h2 id="physio-heading">
+              Find confidence<br>
+              <span class="text-burgundy">in your movement.</span>
+            </h2>
+
+            <p class="sv-service__lead">
+              Support for movement, strength and everyday function.
+            </p>
+
+            <p>
+              Physiotherapy begins with understanding your concerns
+              and how they affect your daily activities. An assessment
+              helps identify your needs and guide a discussion about
+              suitable care.
+            </p>
+
+            <p>
+              Your physiotherapist may discuss movement exercises,
+              strength work and practical guidance, depending on
+              your assessment and goals.
+            </p>
+
+            <div class="sv-tags" aria-label="Physiotherapy topics">
+              <span>Movement</span>
+              <span>Strength</span>
+              <span>Everyday function</span>
+            </div>
+
+            <a
+              class="button button--dark"
+              href="about-contact.html#appointment"
+            >
+              <span>Enquire about physiotherapy</span>
+              <span class="button__icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-arrow"></use>
+                </svg>
+              </span>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- EDITORIAL DIVIDER -->
+      <div class="sv-statement" aria-hidden="true">
+        <div class="container sv-statement__inner">
+          <span>Move with purpose.</span>
+
+          <svg class="icon">
+            <use href="#icon-cross"></use>
+          </svg>
+
+          <span>Care with direction.</span>
+        </div>
+      </div>
+
+      <!-- CHIROPRACTIC -->
+      <section
+        id="chiropractic"
+        class="sv-service sv-service--chiro section"
+        aria-labelledby="chiro-heading"
+      >
+        <div class="container sv-service__layout">
+
+          <div class="sv-service__content" data-reveal>
+            <p class="eyebrow">Chiropractic care</p>
+
+            <h2 id="chiro-heading">
+              A considered approach<br>
+              <span class="text-burgundy">to everyday mobility.</span>
+            </h2>
+
+            <p class="sv-service__lead">
+              Explore care for concerns involving joints,
+              muscles and the spine.
+            </p>
+
+            <p>
+              Chiropractic assessment considers your symptoms,
+              movement and relevant health history. It provides
+              a starting point for discussing appropriate
+              options with your chiropractor.
+            </p>
+
+            <p>
+              Ask about the proposed approach, what to expect
+              and whether it is suitable for you. Care
+              recommendations depend on your individual assessment.
+            </p>
+
+            <div class="sv-tags" aria-label="Chiropractic topics">
+              <span>Joint movement</span>
+              <span>Spinal health</span>
+              <span>Mobility</span>
+            </div>
+
+            <a
+              class="button button--dark"
+              href="about-contact.html#appointment"
+            >
+              <span>Enquire about chiropractic</span>
+              <span class="button__icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-arrow"></use>
+                </svg>
+              </span>
+            </a>
+          </div>
+
+          <div class="sv-photo-composition" data-reveal>
+            <span class="sv-photo-composition__outline" aria-hidden="true"></span>
+
+            <figure class="sv-photo">
+              <img
+                src="Images/chiropractic-care.png"
+                alt="Illustration of a chiropractor assessing a patient's shoulder and posture"
+                width="1448"
+                height="1086"
+                loading="lazy"
+                decoding="async"
+              >
+
+              <figcaption class="sv-photo__caption">
+                <span class="sv-photo__caption-icon">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-spine"></use>
+                  </svg>
+                </span>
+
+                <span>
+                  <small>Start with understanding</small>
+                  <strong>Explore your next step.</strong>
+                </span>
+              </figcaption>
+            </figure>
+
+            <span class="sv-photo-composition__index" aria-hidden="true">
+              02
+            </span>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- FIRST VISIT -->
+      <section
+        id="first-visit"
+        class="sv-visit section"
+        aria-labelledby="visit-heading"
+      >
+        <div class="sv-visit__ambient" aria-hidden="true"></div>
+
+        <div class="container">
+          <div class="sv-visit__heading" data-reveal>
+            <div>
+              <p class="eyebrow">Your first visit</p>
+
+              <h2 id="visit-heading">
+                Begin with clarity.<br>
+                <span class="text-gradient">Move forward together.</span>
+              </h2>
+            </div>
+
+            <p>
+              Contact the clinic before your appointment to confirm
+              fees, availability and anything you need to bring.
+            </p>
+          </div>
+
+          <div class="sv-visit__grid">
+            <article class="sv-visit-card" data-reveal data-tilt>
+              <span class="sv-visit-card__number">01 / CONNECT</span>
+
+              <span class="sv-visit-card__icon" aria-hidden="true">
+                <svg class="icon">
+                  <use href="#icon-arrow"></use>
+                </svg>
+              </span>
+
+              <h3>Tell us what you need</h3>
+
+              <p>
+                Let us know which service interests you and
+                how you prefer to be contacted.
+              </p>
+            </article>
+
+            <article class="sv-visit-card" data-reveal data-tilt>
+              <span class="sv-visit-card__number">02 / PREPARE</span>
+
+              <span class="sv-visit-card__icon" aria-hidden="true">
+                <svg class="icon">
+                  <use href="#icon-check"></use>
+                </svg>
+              </span>
+
+              <h3>Confirm the details</h3>
+
+              <p>
+                Ask about your visit, appointment length,
+                fees and any required paperwork.
+              </p>
+            </article>
+
+            <article class="sv-visit-card" data-reveal data-tilt>
+              <span class="sv-visit-card__number">03 / DISCUSS</span>
+
+              <span class="sv-visit-card__icon" aria-hidden="true">
+                <svg class="icon">
+                  <use href="#icon-movement"></use>
+                </svg>
+              </span>
+
+              <h3>Explore your care</h3>
+
+              <p>
+                Discuss your concerns, goals and suitable
+                next steps with your care provider.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQs -->
+      <section class="section" aria-labelledby="service-faq-heading">
+        <div class="container faq-layout">
+          <div class="faq-intro" data-reveal>
+            <p class="eyebrow">Helpful to know</p>
+
+            <h2 id="service-faq-heading">
+              Questions before<br>
+              <span class="text-burgundy">you get started?</span>
+            </h2>
+
+            <p>
+              Get in touch if you would like more information
+              before requesting a visit.
+            </p>
+
+            <a
+              class="text-link"
+              href="mailto:canadianmedicalgroupinc@gmail.com"
+            >
+              <span>Email the clinic</span>
+              <svg class="icon" aria-hidden="true">
+                <use href="#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="faq-list" data-reveal>
+            <details class="faq-item">
+              <summary>
+                <span>Which service should I enquire about?</span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-chevron"></use>
+                </svg>
+              </summary>
+
+              <div class="faq-item__answer">
+                <p>
+                  If you are unsure, contact the clinic and describe
+                  your general enquiry. Ask which service may be
+                  appropriate and whether an assessment is available.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>Do I need a referral?</span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-chevron"></use>
+                </svg>
+              </summary>
+
+              <div class="faq-item__answer">
+                <p>
+                  Please confirm requirements with the clinic.
+                  If you plan to claim through insurance,
+                  check your policy for referral requirements.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>Can I use my insurance?</span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-chevron"></use>
+                </svg>
+              </summary>
+
+              <div class="faq-item__answer">
+                <p>
+                  Confirm coverage with your insurer and ask the
+                  clinic about fees, receipts and billing arrangements
+                  before booking.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>Is my appointment confirmed when I send a request?</span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-chevron"></use>
+                </svg>
+              </summary>
+
+              <div class="faq-item__answer">
+                <p>
+                  A request is an enquiry. Wait for the clinic
+                  to confirm availability and appointment details.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="sv-final" aria-labelledby="sv-final-heading">
+        <div class="container">
+          <div class="sv-final__panel">
+            <div class="sv-final__rings" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="sv-final__content" data-reveal>
+              <p class="eyebrow">Canadian Medical Group</p>
+
+              <h2 id="sv-final-heading">
+                Your next move<br>
+                starts with a conversation.
+              </h2>
+
+              <p>
+                Find us at Westwood Mall, Mississauga.
+                Contact us about physiotherapy or chiropractic care.
+              </p>
+
+              <a
+                class="button button--light"
+                href="about-contact.html#appointment"
+                data-magnetic
+              >
+                <span>Request an appointment</span>
+                <span class="button__icon">
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#icon-arrow"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Canadian Medical Group home">
+            <span class="footer-brand__logo-wrap">
+              <img
+                src="Images/logo.png"
+                alt="Canadian Medical Group"
+                width="220"
+                height="100"
+                loading="lazy"
+              >
+            </span>
+          </a>
+
+          <p>
+            Physiotherapy and chiropractic care
+            at Westwood Mall, Mississauga.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h2>Explore</h2>
+          <a href="index.html">Home</a>
+          <a href="services.html">Our services</a>
+          <a href="about-contact.html">About & contact</a>
+          <a href="about-contact.html#appointment">
+            Request an appointment
+          </a>
+        </div>
+
+        <div class="footer-column">
+          <h2>Our care</h2>
+          <a href="#physiotherapy">Physiotherapy</a>
+          <a href="#chiropractic">Chiropractic</a>
+        </div>
+
+        <div class="footer-column footer-contact">
+          <h2>Visit & connect</h2>
+
+          <address>
+            Westwood Mall<br>
+            Unit 1A07-7215 Goreway Dr<br>
+            Mississauga, ON L4T 0B4
+          </address>
+
+          <a href="mailto:canadianmedicalgroupinc@gmail.com">
+            canadianmedicalgroupinc@gmail.com
+          </a>
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Westwood+Mall+Unit+1A07+7215+Goreway+Dr+Mississauga+ON+L4T+0B4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get directions
+            <svg class="icon" aria-hidden="true">
+              <use href="#icon-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>
+          © <span data-current-year>2026</span>
+          Canadian Medical Group. All rights reserved.
+        </p>
+
+        <p class="footer-image-note">
+          Illustrative imagery. Images do not depict our actual staff or premises.
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+  <a
+    class="back-to-top"
+    href="#main-content"
+    aria-label="Back to top"
+    hidden
+  >
+    <svg class="icon" aria-hidden="true">
+      <use href="#icon-arrow"></use>
+    </svg>
+  </a>
+</body>
+</html>
